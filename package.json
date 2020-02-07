@@ -1,0 +1,17 @@
+{
+  "name": "circleci-api-helper",
+  "version": "1.0.0",
+  "description": "Simplify and help people use the circleci api within node.js application",
+  "main": "index.js",
+  "repository": "https://github.com/johnhiggs/circleci-api-helper",
+  "author": "john ahigian",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "runWorkflow": "node ./scripts/runWorkflow.js"
+  },
+  "devDependencies": {
+    "fs-extra": "8.1.0",
+    "request": "2.88.0"
+  }
+}
