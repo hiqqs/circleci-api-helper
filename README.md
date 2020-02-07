@@ -10,5 +10,12 @@ Simplify and help people use the CircleCI API (v2) using node.js
 /utils/workflowName.js
 /utils/workflowID.js
 ```
-#### Trigger workflow (requires circleToken, & workflowName)
+#### Examples of these values
+```branch: master
+circleToken: FAKEGUID3adas23d69e532432d3x1f534852fs52
+projectSlug: gh/johnhiggs/circleci-api-helper
+workflowName: default-flow
+```
+
+#### Trigger workflow (requires circleToken, projectSlug, & workflowName)
 `yarn runWorkflow`
