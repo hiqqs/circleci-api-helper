@@ -5,9 +5,9 @@ Simplify and help people use the CircleCI API (v2) using node.js
 
 #### Files in CI or local that the helper uses for requests to the [CircelCI API (v2)](https://circleci.com/docs/api/v2/)
 ```/utils/branch.js
-/utils/circleToken.js
-/utils/projectSlug.js
-/utils/workflowName.js
+/utils/circleToken.js (Required)
+/utils/projectSlug.js (Required)
+/utils/workflowName.js (Required)
 /utils/workflowID.js
 ```
 #### Examples of these values
