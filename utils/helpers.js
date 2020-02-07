@@ -1,11 +1,14 @@
 const request = require('request')
 const fs = require('fs-extra')
 
-const workflowID = fs.readFileSync("./utils/workflowID.js", "utf-8")
-// console.log('Debug workflowID: ' + workflowID)
 
+// const branch = fs.readFileSync("./utils/circleToken.js", "utf-8")
 const circleToken = fs.readFileSync("./utils/circleToken.js", "utf-8")
+const projectSlug = fs.readFileSync("./utils/projectSlug.js", "utf-8")
+const workflowID = fs.readFileSync("./utils/workflowID.js", "utf-8")
+
 // console.log('Debug CircleCI Token: ' + circleToken)
+// console.log('Debug workflowID: ' + workflowID)
 
 // const insights = {
 //   url: 'https://circleci.com/api/v2/insights/gh/HqOapp/react-native/workflows?circle-token=' + circleToken,
@@ -16,7 +19,7 @@ const circleToken = fs.readFileSync("./utils/circleToken.js", "utf-8")
 
 const getLatestWorkflowIdByBranch = {
   method: 'GET',
-  url: 'https://circleci.com/api/v2/insights/gh/HqOapp/react-native/workflows/react-native?circle-token=' + circleToken,
+  url: 'https://circleci.com/api/v2/insights/' + projectSlug + '/workflows/' + workflowName + '?circle-token=' + circleToken,
   headers: {
     'User-Agent': 'request',
     'Accept': 'application/json'
@@ -25,7 +28,7 @@ const getLatestWorkflowIdByBranch = {
 };
 
 // const getPipelines = {
-//   url: 'https://circleci.com/api/v2/project/gh/HqOapp/react-native/pipeline?circle-token=' + circleToken,
+//   url: 'https://circleci.com/api/v2/project/' + projectSlug + '/pipeline?circle-token=' + circleToken,
 //   headers: {
 //     'User-Agent': 'request',
 //     'Accept': 'application/json'
@@ -35,7 +38,7 @@ const getLatestWorkflowIdByBranch = {
 
 // const triggerPipeline = {
 //   method: 'POST',
-//   url: 'https://circleci.com/api/v2/project/gh/HqOapp/react-native/pipeline?circle-token=' + circleToken,
+//   url: 'https://circleci.com/api/v2/project/' + projectSlug + '/pipeline?circle-token=' + circleToken,
 //   headers: {
 //     'User-Agent': 'request',
 //     'Accept': 'application/json',

@@ -2,5 +2,5 @@
 /utils/branch.js
 /utils/circleToken.js
 /utils/projectSlug.js
-/utils/repoName.js
+/utils/workflowName.js
 /utils/workflowID.js
