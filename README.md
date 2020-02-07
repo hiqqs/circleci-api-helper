@@ -1,5 +1,5 @@
 # circleci-api-helper
-Simplify and help people use the circleci (v2) api within a node.js application
+Simplify and help people use the CircleCI API (v2) using node.js
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
