@@ -1,7 +1,7 @@
 {
   "name": "circleci-api-helper",
-  "version": "1.0.4",
-  "description": "Simplify and help people use the CircleCI API (v2) using node.js",
+  "version": "1.0.5",
+  "description": "Simplify and help people use the CircleCI API (v2)",
   "main": "index.js",
   "repository": "https://github.com/johnhiggs/circleci-api-helper",
   "author": "john ahigian",
@@ -11,7 +11,7 @@
     "runWorkflow": "node ./scripts/runWorkflow.js"
   },
   "devDependencies": {
-    "fs-extra": "8.1.0",
-    "request": "2.88.0"
+    "fs-extra": "^8.1.0",
+    "request": "^2.88.0"
   }
 }
