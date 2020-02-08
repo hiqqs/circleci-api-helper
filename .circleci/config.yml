@@ -1,0 +1,33 @@
+version: 2.1
+jobs:
+  build-and-test:
+    docker:
+       - image: circleci/node:lts
+    environment:
+      CC_TEST_REPORTER_ID: 71094bcd620304493be840a0936587fc88d11afcca7af5772eedf7b484c15f8f
+    steps:
+      - checkout
+      - restore_cache:
+          key: yarn-cache-{{ checksum "yarn.lock" }}
+      - run: yarn install --ignore-scripts --frozen-lockfile
+      - save_cache:
+          key: yarn-cache-{{ checksum "yarn.lock" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Setup Code Climate test-reporter
+          command: |
+            # download test reporter as a static binary
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
+      - run:
+          name: Run tests
+          command: |
+            ./cc-test-reporter before-build
+            yarn jest --collectCoverage
+            ./cc-test-reporter after-build --coverage-input-type clover --exit-code $? --debug
+
+workflows:
+  circleci-api-helper:
+    jobs:
+      - build-and-test
