@@ -1,6 +1,6 @@
 {
   "name": "circleci-api-helper",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Simplify and help people use the CircleCI API (v2)",
   "main": "index.js",
   "repository": "https://github.com/johnhiggs/circleci-api-helper",
@@ -9,6 +9,7 @@
   "private": false,
   "scripts": {
     "runWorkflow": "node ./scripts/runWorkflow.js",
+    "runSpecificWorkflow": "node ./scripts/runSpecificWorkflow.js",
     "test": "jest"
   },
   "devDependencies": {
