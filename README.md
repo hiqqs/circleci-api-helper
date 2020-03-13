@@ -26,5 +26,8 @@ projectSlug: gh/johnhiggs/circleci-api-helper
 workflowName: default-flow
 ```
 
-#### Trigger workflow (requires circleToken, projectSlug, & workflowName)
+#### Trigger workflow (auto generates latest workflow ID based off of required values (requires circleToken, projectSlug, & workflowName)
 `yarn runWorkflow`
+
+#### Simply rerun an existing workflow (set a value to /utils/workflowID.js)
+`yarn runSpecificWorkflow`
