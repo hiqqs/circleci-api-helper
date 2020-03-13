@@ -9,6 +9,9 @@ Simplify and help people use the CircleCI API (v2) using node.js
 <a href="https://codeclimate.com/github/johnhiggs/circleci-api-helper/test_coverage">
 <a href="https://codeclimate.com/github/johnhiggs/circleci-api-helper/test_coverage"><img src="https://api.codeclimate.com/v1/badges/5dabeb357b9abcdcf716/test_coverage" /></a>
 
+#### Add to your node.js project
+``` yarn add circleci-api-helper```
+
 #### Files in CI or local that the helper uses for requests to the [CircelCI API (v2)](https://circleci.com/docs/api/v2/)
 ```/utils/branch.js
 /utils/circleToken.js (Required)
