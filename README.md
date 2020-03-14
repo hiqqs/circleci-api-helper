@@ -7,6 +7,7 @@ Simplify and help people use the CircleCI API (v2) using node.js
 <a href="https://codeclimate.com/github/johnhiggs/circleci-api-helper/maintainability"><img src="https://api.codeclimate.com/v1/badges/5dabeb357b9abcdcf716/maintainability" /></a>
 <a href="https://codeclimate.com/github/johnhiggs/circleci-api-helper/test_coverage">
 <a href="https://codeclimate.com/github/johnhiggs/circleci-api-helper/test_coverage"><img src="https://api.codeclimate.com/v1/badges/5dabeb357b9abcdcf716/test_coverage" /></a>
+[![Downloads](https://img.shields.io/npm/dt/circleci-api-helper.svg)](https://www.npmjs.com/package/circleci-api-helper.svg)
 [![License: MIT](https://img.shields.io/github/license/johnhiggs/circleci-api-helper)](https://opensource.org/licenses/MIT)
 
 #### Install with yarn
