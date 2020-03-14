@@ -1,4 +1,4 @@
-# circleci-api-helper
+# [circleci-api-helper](https://johnhiggs.github.io/circleci-api-helper/)
 Node.js helper :package: for CircleCI API (v2)
 
 [![npm version](https://badge.fury.io/js/circleci-api-helper.svg)](https://badge.fury.io/js/circleci-api-helper) 
