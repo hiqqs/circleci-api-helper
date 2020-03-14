@@ -1,6 +1,6 @@
 {
   "name": "circleci-api-helper",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Simplify and help people use the CircleCI API (v2)",
   "main": "index.js",
   "repository": "https://github.com/johnhiggs/circleci-api-helper",
