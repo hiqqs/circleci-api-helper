@@ -1,10 +1,10 @@
 const request = require('request')
 const fs = require('fs-extra')
 
-const circleToken = fs.readFileSync("./utils/circleToken.js", "utf-8")
-const projectSlug = fs.readFileSync("./utils/projectSlug.js", "utf-8")
-const workflowID = fs.readFileSync("./utils/workflowID.js", "utf-8")
-const workflowName = fs.readFileSync("./utils/workflowName.js", "utf-8")
+const circleToken = fs.readFileSync("./utils/circleToken.js", "utf-8").trim()
+const projectSlug = fs.readFileSync("./utils/projectSlug.js", "utf-8").trim()
+const workflowID = fs.readFileSync("./utils/workflowID.js", "utf-8").trim()
+const workflowName = fs.readFileSync("./utils/workflowName.js", "utf-8").trim()
 
 // console.log('Debug CircleCI Token: ' + circleToken)
 // console.log('Debug workflowID: ' + workflowID)
