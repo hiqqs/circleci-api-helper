@@ -1,5 +1,5 @@
 # circleci-api-helper
-Simplify and help people use the CircleCI API (v2) using node.js
+Helper functions for CircleCI API (v2) using node.js
 
 [![npm version](https://badge.fury.io/js/circleci-api-helper.svg)](https://badge.fury.io/js/circleci-api-helper) 
 [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=shield)](https://circleci.com/gh/johnhiggs/circleci-api-helper)
