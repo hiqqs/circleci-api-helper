@@ -10,25 +10,38 @@ Node.js helper :package: for CircleCI API (v2)
 [![Downloads](https://img.shields.io/npm/dt/circleci-api-helper.svg)](https://www.npmjs.com/package/circleci-api-helper.svg)
 [![License: MIT](https://img.shields.io/github/license/johnhiggs/circleci-api-helper)](https://opensource.org/licenses/MIT)
 
-#### Install with yarn
+* [Install](#install)
+* [How to use](#how-to-use)
+* [Example values](#example-values)
+* [Trigger workflow](#trigger-workflow)
+* [Rerun existing workflow](#rerun-existing-workflow)
+
+## Install
 ``` yarn add circleci-api-helper```
 
-#### Files in CI or local that the helper uses for requests to the [CircelCI API (v2)](https://circleci.com/docs/api/v2/)
+## How to use
+
+Files in CI or local that the helper uses for requests to the [CircelCI API (v2)](https://circleci.com/docs/api/v2/)
+
 ```/utils/branch.js
 /utils/circleToken.js (Required)
 /utils/projectSlug.js (Required)
 /utils/workflowName.js (Required)
 /utils/workflowID.js
 ```
-#### Examples of these values
+## Example values
 ```branch: master
 circleToken: FAKEGUID3adas23d69e532432d3x1f534852fs52
 projectSlug: gh/johnhiggs/circleci-api-helper
 workflowName: default-flow
 ```
 
-#### Trigger workflow (auto generates latest workflow ID based off of required values (requires circleToken, projectSlug, & workflowName)
+## Trigger workflow 
+
+(auto generates latest workflow ID based off of required values (requires circleToken, projectSlug, & workflowName)
+
 `yarn runWorkflow`
 
-#### Simply rerun an existing workflow (set a value to /utils/workflowID.js)
+## Rerun existing workflow
+Simply rerun an existing workflow (set a value to /utils/workflowID.js)
 `yarn runSpecificWorkflow`
