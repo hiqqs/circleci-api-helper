@@ -6,9 +6,6 @@ jobs:
     environment:
       CC_TEST_REPORTER_ID: 71094bcd620304493be840a0936587fc88d11afcca7af5772eedf7b484c15f8f
     steps:
-      - add_ssh_keys:
-          fingerprints:
-            - "SHA256:5J+vw056u4s8GKkfzekrMXv+3I1hIeACvoVseZfNh7U"
       - checkout
       - restore_cache:
           key: yarn-cache-{{ checksum "yarn.lock" }}
