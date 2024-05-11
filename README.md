@@ -10,11 +10,15 @@ Node.js helper :package: for CircleCI API (v2)
 [![Downloads](https://img.shields.io/npm/dt/circleci-api-helper.svg)](https://www.npmjs.com/package/circleci-api-helper.svg)
 [![License: MIT](https://img.shields.io/github/license/johnhiggs/circleci-api-helper)](https://opensource.org/licenses/MIT)
 
+* [Background](#install)
 * [Install](#install)
 * [How to use](#how-to-use)
 * [Example values](#example-values)
 * [Trigger workflow](#trigger-workflow)
 * [Rerun existing workflow](#rerun-existing-workflow)
+
+## Background
+This util allows you to trigger circleci workflows within a node js application.  You can run specific workflow as part of circleci api v2
 
 ## Install
 ``` yarn add circleci-api-helper```
