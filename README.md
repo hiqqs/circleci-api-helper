@@ -36,7 +36,7 @@ Files in CI or local that the helper uses for requests to the [CircelCI API (v2)
 ## Example values
 ```branch: master
 circleToken: FAKEGUID3adas23d69e532432d3x1f534852fs52
-projectSlug: gh/johnhiggs/circleci-api-helper
+projectSlug: gh/{{githubUserName}}/circleci-api-helper
 workflowName: default-flow
 ```
 
